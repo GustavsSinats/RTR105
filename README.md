@@ -23,7 +23,7 @@ Github mājaslapā pieejamas dažādas pamācības kā formatēt tekstu[^1].
 + **history**
 + **pwd**
 
-- [X] 2. Nodarbība darbības ar Linux  
+- [X] 2. Nodarbība darbības ar Linux
 
 ### Sākuma komandas:
 1. whoami (kas es esmu)  
