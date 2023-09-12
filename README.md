@@ -21,11 +21,9 @@ Github mājaslapā pieejamas dažādas pamācības kā formatēt tekstu[^1].
 + **man unname**  
 + **history**
 + **pwd**
-- [ ] 2. nodarbība Darbības ar Linux OS  
+- [ ] 2. nodarbība darbības ar Linux  
 
-1. Iepazīšanās ar jaunu operētājsistēmu  
-2. Primārās darbības komandas lai uzsāktu darbu  
-3. Darbību izpilde ar koda palīdzību  
+1. 
 
 
    
