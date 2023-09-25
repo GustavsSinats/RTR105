@@ -48,7 +48,16 @@ Github mājaslapā pieejamas dažādas pamācības kā formatēt tekstu[^1].
 + lai izveidotu tekstu izmanto echo [teksts] > saglabātās apakšmapītes nosaukums (kursors tiks pārbīdīts uz sākumu)
 + echo > esošajā tekstā pārbīdīs kursoru uz sākumu un esošajam tekstam rakstīsies pāri
 + lai papildinātu jau uzrakstītu tekstu izmanto >> (uzrakstītais tiks attēlots jaunā rindā)
-+ -e (atslēga lai izmantotu \n\t, kas tekstu 
++ -e (atslēga lai izmantotu \n\t, kas tekstu
+- [X] 4. Nodarbība Atļauju maiņa
+Lai augšupielādēdu saglabātu teksta dokumentu no Linux termināļa uz Github repozitoriju no sākuma ar komandu nano jāizveido teksta dokuments, komandas, lai to izdarītu:
+#!/bin/bash
+git add .
+git config --global user.name GustavsSinats
+git config --global user.email sinats.gustavs@gmail.com
+git commit -m "Class_4a"
+git push origin main
+Tālāk šis dokuments jāpievieno vietā, kurā dators to spēj atrast 
 
    
    
