@@ -49,7 +49,8 @@ Github mājaslapā pieejamas dažādas pamācības kā formatēt tekstu[^1].
 + echo > esošajā tekstā pārbīdīs kursoru uz sākumu un esošajam tekstam rakstīsies pāri
 + lai papildinātu jau uzrakstītu tekstu izmanto >> (uzrakstītais tiks attēlots jaunā rindā)
 + -e (atslēga lai izmantotu \n\t, kas tekstu
-- [X] 4. Nodarbība Atļauju maiņa
+  ### Dokumentu augšupielādēšana izmantojot komandas
+- [X] 4. Nodarbība
 Lai augšupielādēdu saglabātu teksta dokumentu no Linux termināļa uz Github repozitoriju no sākuma ar komandu nano jāizveido teksta dokuments, komandas, lai to izdarītu:
 #!/bin/bash
 git add .
