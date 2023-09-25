@@ -51,15 +51,15 @@ Github mājaslapā pieejamas dažādas pamācības kā formatēt tekstu[^1].
 + -e (atslēga lai izmantotu \n\t, kas tekstu
   ### Dokumentu augšupielādēšana izmantojot komandas
 - [X] 4. Nodarbība
-Lai augšupielādēdu saglabātu teksta dokumentu no Linux termināļa uz Github repozitoriju no sākuma ar komandu nano jāizveido teksta dokuments, komandas, lai to izdarītu:
-#!/bin/bash
-git add .
-git config --global user.name GustavsSinats
-git config --global user.email sinats.gustavs@gmail.com
-git commit -m "Class_4a"
+Lai augšupielādēdu saglabātu teksta dokumentu no Linux termināļa uz Github repozitoriju no sākuma ar komandu nano jāizveido teksta dokuments, komandas, lai to izdarītu:  
+#!/bin/bash  
+git add .  
+git config --global user.name GustavsSinats  
+git config --global user.email sinats.gustavs@gmail.com  
+git commit -m "Class_4a"  
 git push origin main
-Tālāk šis dokuments jāpievieno vietā, kurā dators to spēj atrast 
-
+Dators prasīs paroli, lai varētu pievinot teksta dokumentu repozitorijam, šo paroli, jeb private key var atrast pie profila iestatījumiem -developer settings, -personal access tokens
+Šādi dokuments Class_4a tiks pievienots tavam izvēlētajam repozitorijam.
    
    
 
