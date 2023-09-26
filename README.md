@@ -60,6 +60,8 @@ git commit -m "Class_4a"
 git push origin main
 Dators prasīs paroli, lai varētu pievinot teksta dokumentu repozitorijam, šo paroli, jeb private key var atrast pie profila iestatījumiem -developer settings, -personal access tokens
 Šādi dokuments Class_4a tiks pievienots tavam izvēlētajam repozitorijam.
-   
-   
+   ### C valodas pirmie soļi
+  - [X] 5. Nodarbība
+Ar komandu nano first.c -o first.out izveidojam teksta redaktoru ar nosaukumu first.out
+
 
