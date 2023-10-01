@@ -65,7 +65,9 @@ Dators prasīs paroli, lai varētu pievinot teksta dokumentu repozitorijam, šo 
 Ar komandu nano first.c -o first.out izveidojam teksta redaktoru ar nosaukumu first.out
 Sajā dokumentā ir instrukcija kā lietot piezīmes un kā nomainīt skaitli, kuru rāda, kad sistēmai nav kļūdu.
 Lai šo teksta redaktoru aktivizētu izmanto komantu gc first.c -o first.out
-ASCII tabulas
+ar komandu ./(aktivizējamās komandas nosaukums) varam izpildīt komandu
+
+$? komanda norāda kāda veida kļūda ir radusies pēc komandas izpildes (noklusējumā skaitlis 0 nozīmē to, ka kļūdu nav)
 
 
 
