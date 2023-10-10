@@ -1,0 +1,90 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  nano test.c
+    4  gcc test.c -o test.out
+    5  ./test.out 
+    6  git clone https://github.com/GustavsSinats/RTR105_2023_01
+    7  RTR105_2023_01/
+    8  mkdir Class_06
+    9  cd Class_06/
+   10  ls -lt
+   11  ls -la
+   12  nano example_1.c
+   13  ls lt
+   14  ls -lt
+   15  nano printf.c
+   16  .
+   17  cd
+   18  cd RTR105_2023_01/
+   19  mv Class_06 Class_07
+   20  ls -lt
+   21  mkdir Class_07
+   22  ls -lt
+   23  cd Class_07
+   24  nano printf.c
+   25  gcc printf.c -o printf.out
+   26  ./printf.out 
+   27  nano printf.c
+   28  nano datu_ievade.c
+   29  gcc datu_ievade.c -o datu_ievade.out
+   30  ./datu_ievade.out 
+   31  nano datu_ievade.c
+   32  nano flush_example.c
+   33  gcc flush_example.c -o flush_example.out
+   34  ./flush_example.out 
+   35  nano flush_example.c
+   36  nano datu_ievade.c
+   37  gcc datu_ievade.c -o datu_ievade.out
+   38  ./datu_ievade.out 
+   39  nano datu_ievade.c
+   40  gcc datu_ievade.c -o datu_ievade.out
+   41  ./datu_ievade.out 
+   42  nano datu_ievade.c
+   43  gcc datu_ievade.c -o datu_ievade.out
+   44  ./datu_ievade.out 
+   45  nano datu_ievade.c
+   46  gcc datu_ievade. -o datu_ievade.out
+   47  gcc datu_ievade.c -o datu_ievade.out
+   48  ./datu_ievade.out 
+   49  nano datu_ievade.c
+   50  gcc datu_ievade.c -o datu_ievade.out
+   51  ./datu_ievade.out 
+   52  nano datu_ievade.c
+   53  gcc datu_ievade. -o datu_ievade.out
+   54  gcc datu_ievade.c -o datu_ievade.out
+   55  ./datu_ievade.out 
+   56  nano datu_ievade.c
+   57  gcc datu_ievade.c -o datu_ievade.out
+   58  nano datu_ievade.c
+   59  gcc datu_ievade.c -o datu_ievade.out
+   60  ./datu_ievade.out 
+   61  nano datu_ievade.c
+   62  gcc datu_ievade.c -o datu_ievade.out
+   63  nano datu_ievade.c
+   64  gcc datu_ievade.c -o datu_ievade.out
+   65  ./datu_ievade.out 
+   66  nano datu_ievade.c
+   67  gcc datu_ievade.c -o datu_ievade.out
+   68  ./datu_ievade.out 
+   69  nano datu_ievade.c
+   70  gcc datu_ievade.c -o datu_ievade.out
+   71  ./datu_ievade.out 
+   72  nano datu_ievade..c
+   73  nano datu_ievade.c
+   74  gcc datu_ievade.c -o datu_ievade.out
+   75  ./datu_ievade.out 
+   76  nano datu_ievade.c
+   77  gcc datu_ievade.c -o datu_ievade.out
+   78  nano datu_ievade.c
+   79  gcc datu_ievade.c -o datu_ievade.out
+   80  nano datu_ievade.c
+   81  gcc datu_ievade.c -o datu_ievade.out
+   82  ./datu_ievade.out 
+   83  history
+   84  history > history_20231003_Class_07.txt
+   85* 
+   86  history
+   87  cd
+   88  cd RTR105_2023_01/
+   89  ls -lt
+   90  history > history_20231003_Class_07.txt

@@ -1,0 +1,104 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  mkdir Class_08_09
+    4  cd Class_08_09/
+    5  git clone https://github.com/GustavsSinats/RTR105_2023_01
+    6  cd
+    7  ls -lt
+    8  nano variables.c
+    9  gcc variables.c -o variables.out
+   10  nano variables.c 
+   11  gcc variables.c -o variables.out
+   12  ./variables.out 
+   13  nano variables.c 
+   14  gcc variables.c -o variables.out
+   15  ./variables.out 
+   16  nano variables.c
+   17  gcc variables.c -o variables.out
+   18  ./variables.out 
+   19  nano variables.c
+   20  gcc variables.c -o variables.out
+   21  ./variables.out 
+   22  nano variables.c
+   23  gcc variables.c -o variables.out
+   24  nano variables.c
+   25  gcc variables.c -o variables.out
+   26  ./variables.out 
+   27  nano variables.c
+   28  gcc variables.c -o variables.out
+   29  ./variables.out 
+   30  ls -l
+   31  nano variables.c
+   32  gcc variables.c -o variables.out
+   33  ./variables.out 
+   34  nano variables.c
+   35  mv variables.c ./Class_08_09/variables.c
+   36  ls -l
+   37  cd Class_08_09/
+   38  ls -l
+   39  mv variables.out ./Class_08_09/variables.out
+   40  ls -l
+   41  cd
+   42  mv variables.out ./Class_08_09/variables.out
+   43  ls -l
+   44  cd Class_08_09/
+   45  ls -l
+   46  nano variables.c
+   47  gcc variables.c -o variables.out
+   48  nano variables.c
+   49  gcc variables.c -o variables.out
+   50  nano variables.c
+   51  gcc variables.c -o variables.out
+   52  ./variables.out 
+   53  nano variables.c
+   54  gcc variables.c -o variables.out
+   55  nano variables.c
+   56  gcc variables.c -o variables.out
+   57  ./variables.out 
+   58  nano variables.c
+   59  gcc variables.c -o variables.out
+   60  ./variables.out 
+   61  nano variables.c
+   62  gcc variables.c -o variables.out
+   63  ./variables.out 
+   64  nano variables.c
+   65  gcc variables.c -o variables.out
+   66  ./variables.out 
+   67  nano variables.c
+   68  gcc variables.c -o variables.out
+   69  ./variables.out 
+   70  nano variables.c
+   71  gcc variables.c -o variables.out
+   72  nano variables.c
+   73  gcc variables.c -o variables.out
+   74  nano variables.c
+   75  gcc variables.c -o variables.out
+   76  nano variables.c
+   77  gcc variables.c -o variables.out
+   78  nano variables.c
+   79  gcc variables.c -o variables.out
+   80  nano variables.c
+   81  gcc variables.c -o variables.out
+   82  ./variables.out 
+   83  nano variables.c
+   84  gcc variables.c -o variables.out
+   85  ./variables.out 
+   86  nano variables.c
+   87  gcc variables.c -o variables.out
+   88  ./variables.out 
+   89  ls -lt
+   90  nano variables.c
+   91  gcc variables.c -o variables.out
+   92  ./variables.out 
+   93  nano variables.c
+   94  gcc variables.c -o variables.out
+   95  nano variables.c
+   96  gcc variables.c -o variables.out
+   97  ./variables.out 
+   98  nano variables.c
+   99  gcc variables.c -o variables.out
+  100  ./variables.out 
+  101  history
+  102  cd
+  103  cd Class_08_09/
+  104  history > history_20231010_Class_08_09.txt

@@ -1,0 +1,116 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  git clone https://github.com/GustavsSinats RTR105_2023_01
+    5  git clone https://github.com/GustavsSinats/RTR105_2023_01
+    6  ls
+    7  cd RTR105_2023_01/
+    8  mkdir 
+    9  mkdir Class_05
+   10  ls -lt
+   11  cd Class_05/
+   12  cd ..
+   13  tree
+   14  ls -lt
+   15  cd Class_05/
+   16  pwd
+   17  nano first.c
+   18  ls -lt
+   19  gcc first.c 
+   20  echo $0
+   21  echo $?
+   22  ./first.c
+   23  echo $?
+   24  ls -lt
+   25  ./a.out 
+   26  echo $?
+   27  ls -lt
+   28  gcc first.c 
+   29  ls -lt
+   30  cat first.c 
+   31  cat a.out 
+   32  gcc first.c -first.out
+   33  gcc first.c -o first.out
+   34  ls -lt
+   35  rm *.out
+   36  ls -lt
+   37  history
+   38  echo $?
+   39  nano first.c
+   40  gcc first.c -o first.out
+   41  ls -lt
+   42* 
+   43  echo $?
+   44  nano first.c
+   45  gcc first.c -o first.out
+   46  ./first.out 
+   47  $?
+   48  echo $?
+   49  ./first.out 
+   50  echo $?
+   51  ls -lt
+   52  nano first.c
+   53  gcc first.c -o first.out
+   54  ls -lt
+   55  ./first.out 
+   56  $?
+   57  ./first.out 
+   58  echo $?
+   59  ls -lt
+   60  cat first.c
+   61  nano first.c
+   62  ls -lt
+   63  gcc first.c -o first_with_comments.out
+   64  ls -lt
+   65  man diff
+   66  diff first.out first_with_comments.out 
+   67  cat first.c
+   68  cp first.c second.c
+   69  ls -lt
+   70  nano second.c 
+   71  gcc second.c -o second.out
+   72  ls -lt
+   73  nano second.c
+   74  ls -lt
+   75  nano second.c 
+   76  gcc second.c -o second.out
+   77  ls -lt
+   78  ./second.out 
+   79  cat second.c
+   80  man echo
+   81  nano second.c 
+   82  gcc second.c -o second.out
+   83  ./second.out 
+   84  nano second.c 
+   85  gcc second.c -o second.out
+   86  ./second.out 
+   87  nano second.c 
+   88  gcc second.c -o second.out
+   89  ./second.out 
+   90  nano second.c 
+   91  gcc second.c -o second.out
+   92  ./second.out 
+   93  nano second.c 
+   94  gcc second.c -o second.out
+   95  ./second.out 
+   96  nano second.c 
+   97  ls -lt
+   98  rm *.out
+   99  ls -lt
+  100  man gcc
+  101  gcc -Wall -save-temps second.c -o second.out
+  102  ls -lt
+  103  cat ./second.i
+  104  cat ./second.s
+  105  cat second.o
+  106  ls -lt
+  107  history | grep Wall
+  108  cd
+  109  pwd
+  110  cd RTR105_2023_01/
+  111  touch .gitignore
+  112  ls -lt
+  113  ls -lta
+  114  nano .gitignore
+  115  ls -lta
+  116  history > history_20230926_Class_05.txt
