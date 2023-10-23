@@ -4,7 +4,7 @@ int main() {
     char num;
     
     // Prasa lietotajam ievadit naturalu skaitli
-    printf("Ievadi naturalu skaitli no -128 lidz 127: ");
+    printf("Ievadi naturalu skaitli no 0 lidz 127: ");
     scanf("%hhd", &num);
     
     // Sagatavo un izprinte binaro skaitli izmantojot bitu parbidi
