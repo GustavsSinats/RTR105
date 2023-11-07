@@ -1,0 +1,27 @@
+#!/usr/bin/gnuplot -persist
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+# set output 'simple.1.png'
+set key fixed left top vertical Right noreverse enhanced autotitle box lt black linewidth 1.000 dashtype solid
+unset parametric
+set samples 50, 50
+set title "Funkcijas nosaukums"
+set ylabel "y ass nosaukums"
+set xlabel "x ass nosaukums"
+set xrange [0:10]
+set mxtics 5
+set yrange [0:1]
+set mytics 5
+set key
+plot sin(x) title "sinuss"
+set grid mxtics mytics ls 101 
+set title  font ",15" textcolor lt -1 norotate
+set xrange [ * : * ] noreverse writeback
+set x2range [ * : * ] noreverse writeback
+set yrange [ * : * ] noreverse writeback
+set y2range [ * : * ] noreverse writeback
+set zrange [ * : * ] noreverse writeback
+set cbrange [ * : * ] noreverse writeback
+set rrange [ * : * ] noreverse writeback
+set colorbox vertical origin screen 0.9, 0.2 size screen 0.05, 0.6 front  noinvert bdefault
+NO_ANIMATION = 1
+plot [0:10] sin(x),cos(x)
