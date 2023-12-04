@@ -5,14 +5,18 @@ Grupa - RECV0_1
 arcsin_gala_versija.c - pabeigts kods
 arcsin_pabeigts.c - pabeigts kods ar ASCII zīmējumu ar formulu, kā veidojas arcsin funkcija
 ### Apraksts  
-Teilora rindas tiek izmantotas dažādās matemātikas un fizikā. Tās ir īpaši noderīgas, lai:
+
+
+Šajā laboratorijas darbā autors ir izveidojis kodu - Teilora rindas, kurš izpilda summas darbības, lai iegūtu iespējami tuvu rezultātu funkcijai asin(x), kur x ir lietotāja izvēlēta vērtība robežās no [-1;1], tādejādi iespējams uzzīmēt savu grafiku, kurš ir iespējami tuvs oriģinālajam.
+
+Šos rezultātus var izmantot lai:
 
 Aprēķinātu funkciju vērtības punktos, kas atrodas netālu no punkta, kur ir zināmi tās atvasinājumi.
 Aprēķinātu funkciju vērtību robežas.
 Atrisinātu diferenciālvienādojumus.
 Izpētītu funkciju īpašības.
-Šajā Laboratorijas darbā Teilora rindas tika uzrakstītas ar C valodas palīdzību, lai iegūtu grafiku, kas ir ļoti tuvs īstajam.
-Tā, kā Teilora rindas izmanto faktoriālu, lai iegūtu katra nākamā saskaitāmā vērtību, tad to realizējām ar summas palīdzību, kur
+
+Tā, kā Teilora rindas izmanto faktoriālu, lai iegūtu katra nākamā saskaitāmā vērtību, tad to realizēju ar summas palīdzību, kur
 katrs nākamais saskaitāmais tika iegūts iepriekšējam piereizinot rekurences reizinātāju,
 tādejādi ievērojami samazinot nepieciešamos datora resursus, lai veiktu konkrētās darbības. 
 ### Programma  
