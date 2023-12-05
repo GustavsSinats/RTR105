@@ -29,7 +29,7 @@ void main()
     printf("Ievadi savu x vērtību: ");
     scanf("%Lf",&x);
     y = asin(x);
-    printf("asin (%.4Lf) = %.4Lf\n\n", x, y);
+    printf("asin (%.5Lf) = %.5Lf\n\n", x, y);
 
     printf("a0 = (%.4Lf) S0 = %.4Lf\n",x,x);
     
@@ -45,7 +45,7 @@ void main()
        if(k==500)
        printf("a500 = %.2Le S500= %5.4Lf\n", a, S);
     }
-    printf("asin (%.2Lf) caur summu: %.2Lf\n",x,S);
+    printf("asin (%.5Lf) caur summu: %.5Lf\n",x,S);
     
     printf("          500                                     \n");
     printf("        ______                                    \n");
