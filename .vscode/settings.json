@@ -4,7 +4,8 @@
     "editor.defaultFormatter": "xaver.clang-format",
     "files.associations": {
         "typeindex": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "random": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
