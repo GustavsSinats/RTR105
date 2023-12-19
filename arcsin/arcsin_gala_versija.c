@@ -33,7 +33,7 @@ void main()
     printf("        ______                                    \n");
     printf("        \\                        2*k+1           \n");
     printf("         \\             (2*k)! * x                \n");
-    printf("asin(x) = >         ______________________        \n");
+    printf("asin(%.2f) = >         ______________________        \n",x);
     printf("         /            k      2                    \n");
     printf("        /_____       4 * (k)!  * (2*k+1)          \n");
     printf("          k=0                                 \n\n\n");
