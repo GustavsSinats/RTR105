@@ -8,7 +8,7 @@ int main() {
 
   // Lietotajam paparsa datu tipu
   char Datu_tips;
-  printf("Izvēlies datu tipu ar kuru aprēķināt faktoriālu (char(c), int(i), or long long(l)): ");
+  printf("Izvēlies datu tipu ar kuru aprēķināt faktoriālu (char(c), int(i), vai long long(l)): ");
   scanf(" %c", &Datu_tips);
 
 
