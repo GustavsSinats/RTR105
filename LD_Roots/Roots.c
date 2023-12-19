@@ -21,8 +21,8 @@ int main()
 
     else
     {
-        funkca = asin(a);
-        funkcb = asin(b);
+        funkca = asin(a)+c;
+        funkcb = asin(b)+c;
 
         if (funkca * funkcb > 0)
         {
@@ -38,20 +38,20 @@ int main()
         {
             k++; // k=k+1;//k+=1;
             x = (a + b) / 2;
-            if (funkca * asin(x) > 0) // pie a=0 -> funkca =0 -> reizinaajums ir preciizi 0
+            if (funkca * (asin(x)+c) > 0) // pie a=0 -> funkca =0 -> reizinaajums ir preciizi 0
             // visulaiku->visulaika;"straadaa"
             {
-                b = x;
                 a = x;
+                
             }
             else
                 b = x;
             printf("%2d.iteraacija:asin(%7.3f)=%7.3f\t", k, a, (asin(a)+c));
-            printf("asin(%7.3f)=%7.3f\t", x, asin(x));
+            printf("asin(%7.3f)=%7.3f\t", x, (asin(x)+c));
             printf("asin(%7.3f)=%7.3f\n", b, (asin(b)+c));
         }
 
-        printf("Sakne atrodas pie x=%.3f, jo asin(x) ir %.3f\n", x, asin(x));
+        printf("Sakne atrodas pie x = %.3f, jo asin(x) ir %.3f\n", x, (asin(x)+c));
     }
     return 0;
 }
