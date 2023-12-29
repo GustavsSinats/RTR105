@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main () {
   //Paprasa lietotaja skaitli
   double skaitlis;
   printf("Ievadi decimālu skaitli: ");
@@ -18,7 +18,7 @@ int main() {
   }
 
   // rezultata mainigais
-  unsigned long long result = 1;
+  unsigned long long rezultats = 1;
 
   // Aprēķina faktoriālu ar for ciklu
   double vērtība = 1;
@@ -41,25 +41,25 @@ int main() {
 
     switch (datu_tips) {
     case 'c':
-      if (result > (unsigned long long)255) {
+      if (rezultats > (unsigned long long)255) {
         printf("Faktoriāla vērtība pārsniedz char datu tipa limitu.\n");
         break;
       }
-      result *= (unsigned long long)vērtība;
+      rezultats *= (unsigned long long)vērtība;
       break;
     case 'i':
-      if (result > (unsigned long long)32767) {
+      if (rezultats > (unsigned long long)2147483648) {
         printf("Faktoriāla vērtība pārsniedz int datu tipa limitu.\n");
         break;
       }
-      result *= (unsigned long long)vērtība;
+      rezultats *= (unsigned long long)vērtība;
       break;
     case 'l':
-      if (result > (unsigned long long)2147483647) {
+      if (rezultats > (unsigned long long)9223372036854775807) {
         printf("Faktoriāla vērtība pārsniedz long long datu tipa limitu.\n");
         break;
       }
-      result *= (unsigned long long)vērtība;
+      rezultats *= (unsigned long long)vērtība;
       break;
     }
   }
@@ -67,13 +67,13 @@ int main() {
   // lai attēlotu faktoriāla vērtību
   switch (datu_tips) {
   case 'c':
-    printf("Faktoriāla vērtība no skaitļa %.0lf, izmantojot char datu tipu: %u\n", skaitlis, (unsigned int)result);
+    printf("Faktoriāla vērtība no skaitļa %.0lf, izmantojot char datu tipu: %u\n", skaitlis, (unsigned int)rezultats);
     break;
   case 'i':
-    printf("Faktoriāla vērtība no skaitļa %.0lf, izmantojot int datu tipu: %u\n", skaitlis, (unsigned int)result);
+    printf("Faktoriāla vērtība no skaitļa %.0lf, izmantojot int datu tipu: %u\n", skaitlis, (unsigned int)rezultats);
     break;
   case 'l':
-    printf("Faktoriāla vērtība no skaitļa %.0lf, izmantojot long long datu tipu: %llu\n", skaitlis, result);
+    printf("Faktoriāla vērtība no skaitļa %.0lf, izmantojot long long datu tipu: %llu\n", skaitlis, rezultats);
     break;
   }
 
