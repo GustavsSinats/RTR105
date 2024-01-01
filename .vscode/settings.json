@@ -1,11 +1,9 @@
+
 {
-    "clang-format.executable": "${workspaceRoot}/bin/clang-format",
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "xaver.clang-format",
     "files.associations": {
-        "typeindex": "c",
-        "typeinfo": "c",
-        "random": "c"
-    },
-    "C_Cpp.errorSquiggles": "disabled"
+        "stdio.h": "c",
+        "math.h": "c",
+        "ar.h": "c",
+        "cmath": "c"
+    }
 }

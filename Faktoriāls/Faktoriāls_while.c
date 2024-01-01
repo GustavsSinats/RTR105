@@ -1,80 +1,55 @@
 #include <stdio.h>
 
 int main() {
-  //Lietotaajam paprasa skaitli
-  double skaitlis;
-  printf("Ievadi decimālu skaitli: ");
-  scanf("%lf", &skaitlis);
+  int skaitlis;
+  char datuTips;
 
-  // Lietotajam paparsa datu tipu
-  char Datu_tips;
-  printf("Izvēlies datu tipu ar kuru aprēķināt faktoriālu (char(c), int(i), vai long long(l)): ");
-  scanf(" %c", &Datu_tips);
+  printf("Ievadiet decimālskaitli: ");
+  scanf("%d", &skaitlis);
 
+  printf("Izvēlieties datu tipu: (c) char, (i) int, (l) long long: ");
+  scanf(" %c", &datuTips);
 
-  // Pārbauda vai skaitlis nav negatīvs
-  if (skaitlis < 0) {
-    printf("Izvēlies pozitīvu skaitli.\n");
-    return 1;
-  }
-
-  // rezultata mainigais
-  long long rezultats = 1;
-
-  // Rēķina faktoriālu ar while
-  double vērtība = 1;
-  while (vērtība <= skaitlis) {
-    // pārbauda vai rezultāts nav par lielu izvēlētajam datu tipam
-    if (Datu_tips == 'c' && vērtība > 255) {
-      printf("Aprēķinātā vērtība pārsniedz char datu tipa robežu.\n");
-      return 1;
-    } else if (Datu_tips == 'i' && vērtība > 2147483648) {
-      printf("Aprēķinātā vērtība pārsniedz int datu tipa robežu.\n");
-      return 1;
-    } else if (Datu_tips == 'l' && vērtība > 9223372036854775807) {
-      printf("Aprēķinātā vērtība pārsniedz long long datu tipa robežu.\n");
-      return 1;
+  if (datuTips == 'c') {
+    char faktors = 1;
+    int i = 1;
+    while (i <= skaitlis) {
+      if (faktors / i < 0) {
+        printf("Aprēķins ar char datu tipu nav iespējams.\n");
+        return 0;
+      }
+      faktors = faktors * i;
+      i++;
     }
-
-    switch (Datu_tips) {
-    case 'c':
-      if (rezultats > 255) {
-        printf("Aprēķinātā vērtība pārsniedz char datu tipa robežu.\n");
-        return 1;
+    printf("Ar char datu tipu %d faktoriāls ir: %d\n", skaitlis, faktors);
+  } else if (datuTips == 'i') {
+    int faktors = 1;
+    int i = 1;
+    while (i <= skaitlis) {
+      if (faktors / i < 0) {
+        printf("Aprēķins ar int datu tipu nav iespējams.\n");
+        return 0;
       }
-      rezultats *= (long long)vērtība;
-      break;
-    case 'i':
-      if (rezultats > 32767) {
-        printf("Aprēķinātā vērtība pārsniedz int datu tipa robežu.\n");
-        return 1;
-      }
-      rezultats *= (long long)vērtība;
-      break;
-    case 'l':
-      if (rezultats > 2147483647) {
-        printf("Aprēķinātā vērtība pārsniedz long long datu tipa robežu.\n");
-        return 1;
-      }
-      rezultats *= (long long)vērtība;
-      break;
+      faktors = faktors * i;
+      i++;
     }
-
-    vērtība++;
-  }
-
-  // lai attlēlotu rezultatu
-  switch (Datu_tips) {
-  case 'c':
-    printf("Faktoriāls no skaitļa %.0lf, izmantojot char datu tipu: %d\n", skaitlis, (int)rezultats);
-    break;
-  case 'i':
-    printf("Faktoriāls no skaitļa %.0lf, izmantojot int datu tipu: %d\n", skaitlis, (int)rezultats);
-    break;
-  case 'l':
-    printf("Faktoriāls no skaitļa %.0lf, izmantojot long long datu tipu: %lld\n", skaitlis, rezultats);
-    break;
+    printf("Ar int datu tipu %d faktoriāls ir: %d\n", skaitlis, faktors);
+  } else if (datuTips == 'l') {
+    long long faktors = 1;
+    int i = 1;
+    while (i <= skaitlis) {
+      if (faktors / i < 0) {
+        printf("Aprēķins ar long long datu tipu nav iespējams.\n");
+        return 0;
+      }
+      faktors = faktors * i;
+      i++;
+    }
+    printf("Ar long long datu tipu %d faktoriāls ir: %lld\n", skaitlis, faktors);
+  } else {
+    printf("Nederīgs datu tips.\n");
   }
 
   return 0;
 }
+
