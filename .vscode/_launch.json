@@ -2,6 +2,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "C/C++ Launch",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceRoot}/${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": false
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
@@ -9,17 +20,16 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/gusta/RTR105_2023_01",
-      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+      "program": "c:/Users/gusta/RTR105_2023_01/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "miDebuggerPath": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ],
-      "preLaunchTask": "C/C++: gcc build active file"
+      ]
     }
   ]
 }
