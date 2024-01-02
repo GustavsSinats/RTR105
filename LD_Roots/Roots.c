@@ -5,13 +5,13 @@ int main()
     float a, b, c, x, delta_x, funkca, funkcb, funkcx;
     int k = 0;
 
-    printf("Lūdzu ievadi intervāla sākuma vērtību a:");
+    printf("Ludzu ievadi intervala sakuma vertibu a:");
     scanf("%f", &a);
-    printf("Lūdzu ievadi intervāla beigu vērtību b:");
+    printf("Ludzu ievadi intervala beigu vertibu b:");
     scanf("%f", &b);
-    printf("Lūdzu ievadi delta_x vērtību (kāda būs precizitāte):");
+    printf("Ludzu ievadi delta_x vertibu (kada bus precizitate):");
     scanf("%f", &delta_x);
-    printf("Lūdzu mīļo lietotāj ievadi kādu nobīdi funkcijais vēlies:");
+    printf("Ludzu mīļo lietotāj ievadi kādu nobīdi funkcijais vēlies:");
     scanf("%f", &c);
 
    // a=(a+c);

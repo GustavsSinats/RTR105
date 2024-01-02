@@ -8,18 +8,17 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/gusta/RTR105_2023_01",
-      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+      "cwd": "c:/Users/gusta/Documents/RTR105_2023_01",
+      "program": "c:/Users/gusta/Documents/RTR105_2023_01/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "miDebuggerPath": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ],
-      "preLaunchTask": "C/C++: gcc build active file"
+      ]
     }
   ]
 }
