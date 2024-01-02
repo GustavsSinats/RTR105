@@ -3,7 +3,8 @@
 #include<stdio.h>
 #include<math.h>
 
-void main (){
+int main ()
+{
     FILE *pFile;
     float a, b, delta_x;
     int k;
@@ -17,7 +18,7 @@ void main (){
     
     
     pFile = fopen ("derivative.dat","w");
-    fprintf(pFile, "asin(x) analytical'  forward difference'  analytical''  forward difference'' \n");
+    fprintf(pFile, "x    asin(x) analytical'  forward difference'  analytical''  forward difference'' \n");
 
 
     int i = ((b-a)/delta_x);//vērtību skaits
@@ -32,10 +33,17 @@ void main (){
 
     for (k = 0; k < i+1; k++)//funkciju kopums
     {
-        asin[k] =  asin(x[k]);
+        func[k] =  asin(x[k]);
     }
    
-   for (k = 0; k < i+1; k++)    // forward difference
+    for (k = 0; k < i+1; k++)//forward difference'
+    {
+        der1[k] = (func[k+1] - func[k]) / delta_x;
+        if (k == i) {der1[i] = 0;}
+    }
+
+
+   for (k = 0; k < i+1; k++)    // forward difference''
     {
         der2[k] = (der1[k+1] - der1[k]) / delta_x;
         if (k == i) {der2[i] = 0;}
@@ -43,14 +51,15 @@ void main (){
     }
 
     for (k = 0; k < i+1; k++)   //analītiskais masīvs, pirmas kartas atvasinajums
-   /* {
-        der_analytical1[k] = 1/sqrt(1-x*x);
+   {
+        der_analytical1[k] = 1/asin(1-x*x);//seit jaieliek atvasinajums
     }
 
     for (k = 0; k < i+1; k++)
+
     {
-        der_analytical2[k] = ( sin(asin(x[k])) - asin(x[k]) * cos(asin(x[k])) ) / ( 4 * x[k] * asin(x[k]) );
-    }*/
+        der_analytical2[k] = ( sin(asin(x[k])) - asin(x[k]) * cos(asin(x[k])) ) / ( 4 * x[k] * asin(x[k]) );//set jaieliek 2. kartas atvasinajums
+    }
 
 
 
@@ -58,6 +67,15 @@ void main (){
     {
         fprintf(pFile, "%.1f\t\t%10.5f\t\t%10.5f\t\t%10.5f\t\t%10.5f\t\t%10.5f\n", x[k], func[k], der_analytical1[k], der1[k], der_analytical2[k], der2[k]);
     }
+
+    fclose (pFile);
+
+    free (x);
+    free (func);
+    free (der1);
+    free (der2);
+    free (der_analytical1);
+    free (der_analytical2);
 
     fclose (pFile);
     
