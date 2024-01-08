@@ -27,7 +27,7 @@ void main()
            {integr2 += h * asin(a + (k + 0.5) * h);}//saskaita visus mazos taisnstura laukumus kopa
     }
 
-    printf("Integrala vertiba izmantojot tainstura metodi: %.2f\n", integr2);
+    printf("Integrala vertiba izmantojot tainstura metodi: %.5f\n", integr2);
 
 ////////nakama metode - trapecu metode
 
@@ -42,7 +42,7 @@ void main()
         for (k = 0; k < n; k++)
            {integr2  += (h/2)*(asin(a + (k - 1) * h) + asin(a+(k*h)));}//saskaita visus trapeču laukumus kopa
     }
-    printf("Integrala vertiba izmantojot trapecu metodi: %.2f\n", integr2);
+    printf("Integrala vertiba izmantojot trapecu metodi: %.5f\n", integr2);
     
 /////////////// Simpsonu metode
 
@@ -62,5 +62,5 @@ n = 0;
            integr2 *= h/3.;
 
     }
-    printf("Integrala vertiba izmantojot trapecu metodi: %.2f\n", integr2);
+    printf("Integrala vertiba izmantojot simpsonu metodi: %.5f\n", integr2);//
 }

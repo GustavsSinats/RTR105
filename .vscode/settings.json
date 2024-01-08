@@ -3,7 +3,8 @@
     "stdio.h": "c",
     "math.h": "c",
     "ar.h": "c",
-    "cmath": "c"
+    "cmath": "c",
+    "ctype.h": "c"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
