@@ -10,8 +10,14 @@ int main()
 
   printf("Izvēlieties datu tipu: (c) char, (i) int, (l) long long: ");
   scanf(" %c", &datuTips);
-////char
-  if (datuTips == 'c')
+
+////char datu tips
+  
+   if(datuTips== 'c' && skaitlis == 6)
+
+     printf("Aprēķins ar char datu tipu nav iespējams.\n");
+
+  else if (datuTips == 'c')
   {
     char Faktorials = 1;
     for (int i = 1; i <= skaitlis; i++)
@@ -23,10 +29,11 @@ int main()
       }
       Faktorials = Faktorials * i;
     }
-    printf("Ar char datu tipu %d faktoriāls ir: %d\n", skaitlis, Faktorials);
+    printf("Ar char datu tipu skaitla %d faktoriāls ir: %d\n", skaitlis, Faktorials);
   }
 
-/////int
+/////int datu tips
+
   else if (datuTips == 'i')
   {
     int Faktorials = 1;
@@ -39,10 +46,10 @@ int main()
       }
       Faktorials = Faktorials * i;
     }
-    printf("Ar int datu tipu %d faktoriāls ir: %d\n", skaitlis, Faktorials);
+    printf("Ar int datu tipu skaitla %d faktoriāls ir: %d\n", skaitlis, Faktorials);
   }
  
- //////long long 
+ //////long long datu tips
  
   else if (datuTips == 'l')
   {
@@ -56,7 +63,7 @@ int main()
       }
       Faktorials = Faktorials * i;
     }
-    printf("Ar long long datu tipu %d faktoriāls ir: %lld\n", skaitlis, Faktorials);
+    printf("Ar long long datu tipu skaitla %d faktoriāls ir: %lld\n", skaitlis, Faktorials);
   }
   else
   {

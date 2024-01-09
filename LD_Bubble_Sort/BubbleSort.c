@@ -9,8 +9,6 @@ int main()
     fgets(rinda, 100, stdin);
 
 
-
-
     // Minimālais
     int min = 127;
     for (int i = 0; i < strlen(rinda); i++)
