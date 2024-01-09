@@ -1,83 +1,95 @@
-#undef __STRICT_ANSI__
-#include<stdlib.h>
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
-int main ()
+// Funkcija, kas aprēķina f(x)
+double f(double x)
 {
-    FILE *pFile;
-    float a, b, delta_x;
-    int k;
+    return asin(x);
+}
 
-    printf("Lūdzu ievadi a vērtību: ");
-    scanf("%f",&a);
-    printf("Lūdzu ievadi b vērtibu: ");
-    scanf("%f",&b);
-    printf("Lūdzu ievadi cik precīzu rezultātu tu vēlies (cik ciparus aiz komata): ");
-    scanf("%f",&delta_x);
+// Funkcija, kas aprēķina f'(x)
+double f_prim(double x)
+{
+    return 1 / sqrt(1 - x * x);
+}
+
+// Funkcija, kas aprēķina f''(x)
+double f_sec(double x)
+{
+    return -x / (2 * sqrt(1 - x * x) * sqrt(1 - x * x));
+}
+
+int main()
+{
+    double a, b, eps;
+    printf("Ievadiet a vertibu: ");
+    scanf("%lf", &a);
+
+    printf("Ievadiet b vertibu: ");
+    scanf("%lf", &b);
+
+    printf("Ievadiet precizitates vertibu: ");
+    scanf("%lf", &eps);
+
     
-    
-    pFile = fopen ("derivative.dat","w");
-    fprintf(pFile, "x    asin(x) analytical'  forward difference'  analytical''  forward difference'' \n");
 
-
-    int i = ((b-a)/delta_x);//vērtību skaits
-    float * x;
-
-    x[0]= a;
-    for(k=1; k < i+1; k++)//x masivs
+    // Aprēķina f(x) vērtības, x no a līdz b
+    FILE *fp = fopen("derivative.dat", "w");
+    fprintf(fp, "\tx\t\t f(x) funkcijas asin vertiba\n");
+    for (double x = a; x <= b; x += eps)
     {
-        x[k] = x[k-1] + delta_x;
+        fprintf(fp, " %lf %lf\n", x, f(x));
     }
+    fprintf(fp, "\n\n");
+    fclose(fp);
 
 
-    for (k = 0; k < i+1; k++)//funkciju kopums
+
+    // Aprēķina f'(x) vērtības, x no a līdz b (analitiskais atvasinājums)
+    fp = fopen("derivative.dat", "a");
+    fprintf(fp, "\tx\t f'(x) analitiskais atvasinajums\n");
+    for (double x = a; x <= b; x += eps)
     {
-        func[k] =  asin(x[k]);
+        fprintf(fp, "%lf %lf\n", x, f_prim(x));
     }
-   
-    for (k = 0; k < i+1; k++)//forward difference'
+    fprintf(fp, "\n\n");
+    fclose(fp);
+
+
+
+    // Aprēķina f'(x) vērtības, x no a līdz b (skaitliskais atvasinājums - diferencēšana un priekšu)
+    fp = fopen("derivative.dat", "a");
+    fprintf(fp, "\tx\t f'(x) skaitliskais atvasinājums - diferencesana uz prieksu\n");
+    for (double x = a; x <= b; x += eps)
     {
-        der1[k] = (func[k+1] - func[k]) / delta_x;
-        if (k == i) {der1[i] = 0;}
+        fprintf(fp, "%lf %lf\n", x, (f(x + eps) - f(x)) / eps);
     }
+    fprintf(fp, "\n\n");
+    fclose(fp);
 
 
-   for (k = 0; k < i+1; k++)    // forward difference''
+
+    // Aprēķina f''(x) vērtības, x no a līdz b (analitiskais atvasinājums)
+    fp = fopen("derivative.dat", "a");
+    fprintf(fp, "\tx\t f''(x) analitiskais atvasinajums\n");
+    for (double x = a; x <= b; x += eps)
     {
-        der2[k] = (der1[k+1] - der1[k]) / delta_x;
-        if (k == i) {der2[i] = 0;}
-        if (k == i-1) {der2[i-1] = 0;}
+        fprintf(fp, "%lf %lf\n", x, f_sec(x));
     }
+    fprintf(fp, "\n\n");
+    fclose(fp);
 
-    for (k = 0; k < i+1; k++)   //analītiskais masīvs, pirmas kartas atvasinajums
-   {
-        der_analytical1[k] = 1/asin(1-x*x);//seit jaieliek atvasinajums
-    }
 
-    for (k = 0; k < i+1; k++)
 
+    // Aprēķina f''(x) vērtības, x no a līdz b (skaitliskais atvasinājums - diferencēšana un priekšu)
+    fp = fopen("derivative.dat", "a");
+    fprintf(fp, "\tx\t f''(x) skaitliskais atvasinājums - diferencēšana un priekšu\n");
+    for (double x = a; x <= b; x += eps)
     {
-        der_analytical2[k] = ( sin(asin(x[k])) - asin(x[k]) * cos(asin(x[k])) ) / ( 4 * x[k] * asin(x[k]) );//set jaieliek 2. kartas atvasinajums
+        fprintf(fp, "%lf %lf\n", x, (f(x + 2 * eps) - 2 * f(x + eps) + f(x)) / (eps * eps));
     }
+    fprintf(fp, "\n\n");
+    fclose(fp);
 
-
-
-    for (k = 0; k < i+1; k++)
-    {
-        fprintf(pFile, "%.1f\t\t%10.5f\t\t%10.5f\t\t%10.5f\t\t%10.5f\t\t%10.5f\n", x[k], func[k], der_analytical1[k], der1[k], der_analytical2[k], der2[k]);
-    }
-
-    fclose (pFile);
-
-    free (x);
-    free (func);
-    free (der1);
-    free (der2);
-    free (der_analytical1);
-    free (der_analytical2);
-
-    fclose (pFile);
-    
     return 0;
 }
