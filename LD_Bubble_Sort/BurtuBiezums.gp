@@ -1,6 +1,6 @@
 #!/usr/bin/gnuplot -persist
 set terminal pngcairo enhanced font "arial,10" size 800, 400
-set output "stabiņu diagrammat.png"
+set output "stabiņu_diagrammat.png"
 
 set title "Burtu biežuma stabiņu diagramma"
 set xlabel "Burts"

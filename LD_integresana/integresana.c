@@ -62,5 +62,5 @@ n = 0;
            integr2 *= h/3.;
 
     }
-    printf("Integrala vertiba izmantojot simpsonu metodi: %.5f\n", integr2);//
+   printf("Integrala vertiba izmantojot simpsonu metodi: %.5f\n", integr2);
 }
