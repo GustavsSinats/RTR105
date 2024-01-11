@@ -91,5 +91,10 @@ int main()
     fprintf(fp, "\n\n");
     fclose(fp);
 
+
+
+   // fp = open("derivative.dat", "a");
+   // fprintf(fp," %lf %lf %lf %lf %lf", x, f(x),f_prim(x),(f(x + eps) - f(x)) / eps, f_sec(x));
+   // fclose (fp);
     return 0;
 }

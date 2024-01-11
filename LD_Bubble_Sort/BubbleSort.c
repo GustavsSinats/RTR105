@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 int main()
 {
     // Ievads
     char rinda[100];
     printf("Ievadiet simbolu rindu (lidz 100 simboliem): ");
     fgets(rinda, 100, stdin);
-
 
     // Minimālais
     int min = 127;
@@ -70,9 +70,6 @@ int main()
         }
     }
 
-
-
-
     // Sakārtošana
     char sakartota_rinda[100];
     for (int i = 0; i < strlen(rinda); i++)
@@ -107,12 +104,31 @@ int main()
         }
     }
 
-   // printf("(%d)\n", max_moda);
+    int burtu_biezums[26] = {0};
+
+  //saskaita cik burtu atkārtojas
+  for (int i = 0; rinda[i] != '\0'; i++) {
+    char burts = rinda[i];
+
+    if (burts >= 'a' && burts <= 'z') {
+      burtu_biezums[burts - 'a']++;
+    } else if (burts >= 'A' && burts <= 'Z') {
+      burtu_biezums[burts - 'A']++;
+    }
+  }
+
+  
+  FILE *pFile = fopen("grafiks.dat", "w");
 
 
-    // for (int i = 0; i < strlen(rinda); i++) {
-    //  printf("%c (%d)\n", sakartota_rinda[i], sakartota_rinda[i]);
-    // }
+  for (int i = 0; i < 26; i++) {
+    if (burtu_biezums[i] != 0) {
+      fprintf(pFile,"%c  %d\n", 'a' + i, burtu_biezums[i]);
+    }
+  }
+
+  // Close the file
+  fclose(pFile);
 
     return 0;
 }
