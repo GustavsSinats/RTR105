@@ -35,9 +35,6 @@ Burbuļu kārtošanas metode ir efektīva, ja datu apjoms ir neliels. Tomēr, ja
 
 
 ### Programma  
-Kods sastāv no 500 saskaitāmajiem, kur katrs nākamais ir mazāks par iepriekšējo, tāpēc jo vairāk saskaitāmo, jo tālāk funkcija pārklāsies ar reālo.
-Tā, kā Teilora rindas izmanto faktoriālu, lai iegūtu katra nākamā saskaitāmā vērtību, tad to realizēju ar summas palīdzību, kur
-katrs nākamais saskaitāmais tika iegūts iepriekšējam piereizinot rekurences reizinātāju,
-tādejādi ievērojami samazinot nepieciešamos datora resursus, lai veiktu nepieciešamos aprēķinus.
-
+Programma lietotājam prasa ievadīt teikumu. Tālāk tas tiek apstrādās un uz ekrāna tiek izvadīta minimālā, maksimālā, vidējā, mediānas un modu vērtība. Ja modas (burta biežums ir vienāds vēl ar kāda cita burta biežumu) ir vairākas, tad tās abas tiek attēlotas uz ekrāna. Blakus burtu vērtībām parādās arī ASCII tabulas vērtības, kuras ir ieliktas iekavās. Šādā veidā bija daudz vieglāk saprast kā kods strādā un identificēt 
+iespējamās kļūdas daudz ātrāk. Pēctam ievadītais teikums tiek sakārtots atbilstoši ASCII tabulas vērtībām. Šie dati tiek nolasīti un tiek izveidots dokuments, kurā ir sastaptie burti un to biežums. Izmantojot šo failu tiek izveidota stabiņu diagramma programmā gnuplot, kurā var redzēt cik reizes tika izmantots katrs burts.
 Koda attēls ar ASCII zīmējumu:
