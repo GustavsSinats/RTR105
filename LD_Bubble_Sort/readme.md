@@ -11,25 +11,27 @@ readme md - apraksts par laboratorijas darbu.
   
 
 ### Apraksts  
-![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/b3ebb5b0-d9a6-4eaa-8a1c-4914a81e6742)
 
+Burbuļu kārtošanas metode ir vienkārša kārtošanas metode, kas darbojas, salīdzinot secīgi blakus esošos elementus un apmaina tos vietām, ja tie ir nepareizā secībā. Kārtošana tiek veikta, līdz visi elementi ir sakārtoti.
+Burbuļu kārtošanas metode darbojas šādi:
+  
+No sākuma, salīdzina katru secīgi blakus esošo elementu.  
+Ja kreisais elements ir lielāks par labo elementu, apmaina tos vietām.  
+Atkārto 1. un 2. soli, līdz sasniedz rindas beigas.  
+Atkārto 1.- 3. soļus, līdz visi elementi ir sakārtoti.  
+Piemēram, ja tiek ievadīta šāda skaitļu rinda: [1, 5, 3, 2, 4]  
 
-Šajā laboratorijas darbā autors ir izveidojis kodu - Teilora rindas, tas ir bezgalīgas trigonometriskas rindas veids, kas var tikt izmantots, lai tuvinātu jebkuru funkciju. Tā  ir nosaukta pēc tās izgudrotāja, angļu matemātiķa Džona Teilora.  
-Teilora rindas vispārīgā forma ir šāda:  
+Burbuļu kārtošanas metode to sakārtos šādi:  
   
-f(x) = a0 + a1(x - a) + a2(x - a)^2 + a3(x - a)^3 + ... 
-  
-kur:  
-  
-f(x) ir funkcija, kuru vēlamies tuvināt  
-a0 ir funkcijas vērtība punktā a  
-a1, a2, a3 utt. ir funkcijas atvasinājumi punktā a  
-(x - a) ir attālums no punkta x līdz punktam a  
-  
-Šīs rindas var tikt izmantotas, lai aprēķinātu funkcijas vērtības, atvasinājumus un citus īpašumus, kā arī, lai tuvinātu funkcijas grafiku.
-Teilora rindas ir īpaši noderīgas, lai tuvinātu funkcijas, kurām nav atvasinājumu visos punktos. Piemēram, lai tuvinātu trigonometriskās, eksponenciālās un citas sarežģītas funkcijas.
-Šajā darbā ar Teilora rindu palīdzību tiek izpildītas summas darbības, lai iegūtu iespējami tuvu rezultātu funkcijai asin(x), kur x ir lietotāja izvēlēta vērtība robežās no [-1;1], tādejādi iespējams uzzīmēt savu grafiku, kurš ir iespējami tuvs oriģinālajam.
-Grafika bildē var redzēt, kā katra nākamā grafika līkne aizvien tālāk sakrīt ar oriģinālo funkciju.
+Salīdzina pirmos divus elementus: 1 un 5. 1 ir mazāks par 5, tāpēc vietām netiek mainīti.  
+Salīdzina otro un trešo elementu: 5 un 3. 5 ir lielāks par 3, tāpēc vietām tiek mainīti. Tagad rinda izskatās šādi:
+[1, 3, 5, 2, 4]  
+Salīdzina trešo un ceturto elementu: 3 un 2. 3 ir lielāks par 2, tāpēc vietām tiek mainīti. Tagad rinda izskatās šādi:
+[1, 2, 3, 5, 4]  
+Salīdzina ceturto un piekto elementu: 3 un 4. 3 ir mazāks par 4, tāpēc vietām netiek mainītai. Tagad rinda izskatās šādi:
+[1, 2, 3, 4, 5]  
+Šajā posmā visi elementi ir sakārtoti, tāpēc metode var pārtraukt darbību.  
+Burbuļu kārtošanas metode ir efektīva, ja datu apjoms ir neliels. Tomēr, ja datu apjoms ir liels, metode var būt neefektīva, jo tā veic daudz salīdzinājumu.  
 
 
 ### Programma  
