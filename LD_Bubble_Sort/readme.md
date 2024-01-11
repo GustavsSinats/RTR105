@@ -1,12 +1,13 @@
-### 1. Laboratorijas darbs - Teilora rindas  
+### 5. Laboratorijas darbs - Bubble Sort  
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
-arcsin_gala_versija.c - pabeigts kods.   
-grafiks.gp - gnuplota scripts.  
-grafiks.png - funkciju attēlojums gnuplotā.  
-asin_grafiks.png - izpildīta koda attēls   
+BubbleSort.c - pabeigts kods.   
+BurtuBiezums.gp - gnuplota scripts.  
+burtu_statistika.png - funkciju attēlojums gnuplotā.  
+grafiks.dat - fails, kurā glabājas cik reizes atkārtojas katrs burts   
 readme md - apraksts par laboratorijas darbu. 
+
   
 
 ### Apraksts  
@@ -38,10 +39,3 @@ katrs nākamais saskaitāmais tika iegūts iepriekšējam piereizinot rekurences
 tādejādi ievērojami samazinot nepieciešamos datora resursus, lai veiktu nepieciešamos aprēķinus.
 
 Koda attēls ar ASCII zīmējumu:
-
-
-
-![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/58785aab-b5ac-49ed-8ed1-055e4c97ecf9)
-
-
-

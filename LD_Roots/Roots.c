@@ -4,20 +4,23 @@ int main()
 {
     float a, b, c, x, delta_x, funkca, funkcb, funkcx;
     int k = 0;
+    
+    FILE * pf;
+    pf = fopen("Roots.dat", "w");
 
     printf("Ludzu ievadi intervala sakuma vertibu a:");
     scanf("%f", &a);
     printf("Ludzu ievadi intervala beigu vertibu b:");
     scanf("%f", &b);
-    printf("Ludzu ievadi delta_x vertibu (kada bus precizitate):");
+    printf("Ludzu ievadi delta_x vertibu:");
     scanf("%f", &delta_x);
-    printf("Ludzu mīļo lietotāj ievadi kādu nobīdi funkcijais vēlies:");
+    printf("Ludzu milo lietotaj ievadi kadu nobidi funkcijais velies:");
     scanf("%f", &c);
 
    // a=(a+c);
     //b=(b+c);
     if (c >= 1.57 || c <= -1.57)
-        printf("Funkcijai nav sakņu, tu vispār apzienies ar kādu funkciju tu darbojies? Ej mācies!\n");
+        printf("Funkcijai nav saknu, tu vispar apzienies ar kadu funkciju tu darbojies? Ej macies!\n");
 
     else
     {
@@ -26,8 +29,8 @@ int main()
 
         if (funkca * funkcb > 0)
         {
-            printf("intervālā [%.2f;%.2f] asin(x) funkcijai", a, b);
-            printf("sakņu nav (vai tajā ir pāra sakņu skaits)\n");
+            printf("intervala [%.2f;%.2f] asin(x) funkcijai", a, b);
+            printf("saknu nav (vai taja ir para saknu skaits)\n");
             return 1;
         }
 
@@ -53,5 +56,8 @@ int main()
 
         printf("Sakne atrodas pie x = %.3f, jo asin(x) ir %.3f\n", x, (asin(x)+c));
     }
+   
+    fprintf((pf),"x\t\t c\t\t \n %.3f\t%.3f\t\t", x, c);
+    fclose(pf);
     return 0;
 }

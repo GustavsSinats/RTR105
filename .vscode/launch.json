@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/gusta/Documents/RTR105_2023_01",
-      "program": "c:/Users/gusta/Documents/RTR105_2023_01/build/Debug/outDebug",
+      "cwd": "c:/Users/gusta/Desktop/gustava laptop/RTU/RTR105_2023_01",
+      "program": "c:/Users/gusta/Desktop/gustava laptop/RTU/RTR105_2023_01/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
