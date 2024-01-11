@@ -38,3 +38,5 @@ Burbuļu kārtošanas metode ir efektīva, ja datu apjoms ir neliels. Tomēr, ja
 Programma lietotājam prasa ievadīt teikumu. Tālāk tas tiek apstrādās un uz ekrāna tiek izvadīta minimālā, maksimālā, vidējā, mediānas un modu vērtība. Ja modas (burta biežums ir vienāds vēl ar kāda cita burta biežumu) ir vairākas, tad tās abas tiek attēlotas uz ekrāna. Blakus burtu vērtībām parādās arī ASCII tabulas vērtības, kuras ir ieliktas iekavās. Šādā veidā bija daudz vieglāk saprast kā kods strādā un identificēt 
 iespējamās kļūdas daudz ātrāk. Pēctam ievadītais teikums tiek sakārtots atbilstoši ASCII tabulas vērtībām. Šie dati tiek nolasīti un tiek izveidots dokuments, kurā ir sastaptie burti un to biežums. Izmantojot šo failu tiek izveidota stabiņu diagramma programmā gnuplot, kurā var redzēt cik reizes tika izmantots katrs burts.
 Koda attēls ar ASCII zīmējumu:
+![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/18bc9cf2-ad7d-4c08-811a-dae3d9c26621)
+
