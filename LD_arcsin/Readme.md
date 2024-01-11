@@ -19,3 +19,8 @@ Kods sastāv no 500 saskaitāmajiem, kur katrs nākamais ir mazāks par iepriek�
 Tā, kā Teilora rindas izmanto faktoriālu, lai iegūtu katra nākamā saskaitāmā vērtību, tad to realizēju ar summas palīdzību, kur
 katrs nākamais saskaitāmais tika iegūts iepriekšējam piereizinot rekurences reizinātāju,
 tādejādi ievērojami samazinot nepieciešamos datora resursus, lai veiktu nepieciešamos aprēķinus.
+
+Koda attēls:
+![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/58785aab-b5ac-49ed-8ed1-055e4c97ecf9)
+
+
