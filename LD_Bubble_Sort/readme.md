@@ -39,4 +39,6 @@ Programma lietotājam prasa ievadīt teikumu. Tālāk tas tiek apstrādās un uz
 iespējamās kļūdas daudz ātrāk. Pēctam ievadītais teikums tiek sakārtots atbilstoši ASCII tabulas vērtībām. Šie dati tiek nolasīti un tiek izveidots dokuments, kurā ir sastaptie burti un to biežums. Izmantojot šo failu tiek izveidota stabiņu diagramma programmā gnuplot, kurā var redzēt cik reizes tika izmantots katrs burts.
 Koda attēls ar ASCII zīmējumu:
 ![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/18bc9cf2-ad7d-4c08-811a-dae3d9c26621)
+![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/fdb8b8ba-926d-46c8-97f2-b2946be785f5)
+
 
