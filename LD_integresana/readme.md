@@ -40,7 +40,11 @@ Trapeču metodē  integrēšanas intervāls tiek sadalīts daudzos mazos interv�
 Koda un rezultātu attēls attēls:  
 ![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/b416a1ec-2070-43d2-8185-f967232b9912)  
 
-![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/616a65b3-2c9e-44ba-ba24-105d4f840846)
+![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/616a65b3-2c9e-44ba-ba24-105d4f840846)  
+  
+![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/83f29da8-64a6-4673-8639-413e2f3f2f42)  
+
+
 
 
 
