@@ -2,11 +2,11 @@
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
-BubbleSort.c - pabeigts kods.   
-BurtuBiezums.gp - gnuplota scripts.  
-burtu_statistika.png - funkciju attēlojums gnuplotā.  
-grafiks.dat - fails, kurā glabājas cik reizes atkārtojas katrs burts   
-readme md - apraksts par laboratorijas darbu. 
+[BubbleSort.c](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Bubble_Sort/BubbleSort.c) - pabeigts kods.   
+[BurtuBiezums.gp](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Bubble_Sort/BurtuBiezums.gp) - gnuplota scripts.  
+[burtu_statistika_istaa.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Bubble_Sort/burtu_statistika_istaa.png) - funkciju attēlojums gnuplotā.  
+[grafiks.dat](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Bubble_Sort/grafiks.dat) - fails, kurā glabājas cik reizes atkārtojas katrs burts   
+[readme.md](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Bubble_Sort/readme.md) - apraksts par laboratorijas darbu. 
 
   
 
