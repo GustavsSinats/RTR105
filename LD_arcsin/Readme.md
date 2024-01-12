@@ -36,6 +36,7 @@ Kods sastāv no 500 saskaitāmajiem, kur katrs nākamais ir mazāks par iepriek�
 Tā, kā Teilora rindas izmanto faktoriālu, lai iegūtu katra nākamā saskaitāmā vērtību, tad to realizēju ar summas palīdzību, kur
 katrs nākamais saskaitāmais tika iegūts iepriekšējam piereizinot rekurences reizinātāju,
 tādejādi ievērojami samazinot nepieciešamos datora resursus, lai veiktu nepieciešamos aprēķinus.
+Lietotājam tiek prasīts ievadīt vērtību, kādā vēlās uzzināt funkcijas asin(x) lielumu, tas tiek aprēķināts izmanotjot teilora rindas, kur katram nākošajam saskaitāmajam tiek pieskaitīts ar vien mazāks lielums, lai pēc iespējas aprēķinu rezultātu tuvinātu īstajam.
 
 Koda attēls ar ASCII zīmējumu:
 
