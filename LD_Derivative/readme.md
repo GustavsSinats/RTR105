@@ -2,11 +2,11 @@
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
-derivative.c - pabeigts kods.   
-derivative.gp - gnuplota scripts.  
-derivative.png - atvasinājumu attēlojums gnuplotā.  
-derivative2.dat - fails, kurā glabājas dati par atvasinājumiem   
-readme.md - apraksts par laboratorijas darbu. 
+[derivative.c](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Derivative/derivative.c) - pabeigts kods.   
+[derivative.gp](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Derivative/derivative.gp) - gnuplota scripts.  
+[derivative.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Derivative/derivative.png) - atvasinājumu attēlojums gnuplotā.  
+[derivative2.dat](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Derivative/derivative2.dat) - fails, kurā glabājas dati par atvasinājumiem   
+[readme.md](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Derivative/readme.md) - apraksts par laboratorijas darbu. 
 
   
 
