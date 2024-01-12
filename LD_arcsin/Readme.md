@@ -5,7 +5,7 @@ Grupa - RECV0_1
 arcsin_gala_versija.c - pabeigts kods.   
 grafiks.gp - gnuplota scripts.  
 grafiks.png - funkciju attēlojums gnuplotā.  
-asin_grafiks.png - izpildīta koda attēls   
+Asin_izpildits.png - izpildīta koda attēls   
 readme md - apraksts par laboratorijas darbu. 
   
 
