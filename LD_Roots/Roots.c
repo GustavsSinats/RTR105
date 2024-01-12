@@ -66,7 +66,7 @@ int main()
 
 fprintf(pFile,"\tx\t\tsin(x)\n)");
 
-printf("Ludzu aizpildi vertibas, lai varetu uzzzimet atvasinajumu funckijai ar parbidi\n");
+printf("Ludzu aizpildi vertibas, lai varetu uzzzimet saknes funckijai ar parbidi\n");
 printf("Ludzu ievadi intervala sakuma vertibu a:");
     scanf("%f", &a);
     printf("Ludzu ievadi intervala beigu vertibu b:");
