@@ -2,11 +2,11 @@
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
-arcsin_gala_versija.c - pabeigts kods.   
-grafiks.gp - gnuplota scripts.  
-grafiks.png - funkciju attēlojums gnuplotā.  
-Asin_izpildits.png - izpildīta koda attēls   
-readme md - apraksts par laboratorijas darbu. 
+[arcsin_gala_versija.c](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_arcsin/arcsin_gala_versija.c) - pabeigts kods.   
+[grafiks.gp](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_arcsin/grafiks.gp) - gnuplota scripts.  
+[grafiks.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_arcsin/Grafiks.png) - funkciju attēlojums gnuplotā.  
+[Asin_izpildits.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_arcsin/Asin_izpildits.png) - izpildīta koda attēls   
+[readme.md](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_arcsin/Readme.md) - apraksts par laboratorijas darbu. 
   
 
 ### Apraksts  
