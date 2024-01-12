@@ -1,4 +1,4 @@
-### 3. Laboratorijas darbs - Roots  
+### 2. Laboratorijas darbs - Roots  
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
