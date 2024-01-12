@@ -3,40 +3,50 @@
 
 double mans_asinuss(double x)
 {
-    double a, S;
+    long double a;
+    double S;
     int k = 0;
 
     a = (1.) * pow(x, 2 * 0 + 1) / (pow(4, 0) * pow(1, 2) * (2 * 0 + 1));
     S = a;
-    printf("%.4f\t%8.4f\t%8.4f\n", x, a, S);
+    printf("a0 %8.4f\t S0%8.4f\n", a, S);
 
-    while (k < 3)
+    while (k <= 500)
     {
         k++;
         a = a * (pow(2 * k - 1, 2) * x * x) / ((2 * k) * (2 * k + 1));
         S = S + a;
-        printf("%.4f\t%8.4f\t%8.4f\n", x, a, S);
+        if (k == 499)
+        {
+            printf("a499 = %.2Le S499 = %.2f \n", a, S);
+        }
+        if (k == 500)
+        {
+            printf("a500 = %.2Le S500 = %.2f \n", a, S);
+        }
     }
+    printf("asin (%.2Lf) caur summu: %.5Lf\n",x,S);
+  
+    
     return S;
-}
-
-void main()
+   }
+   void main()
 {
     
 
     double x, y, yy;
-    printf("Arcsin aprēķināšana: \n");
-    printf("Ievadi savu x vērtību: ");
+    printf("Arcsin aprekinasana: \n");
+    printf("Ievadi savu x vertibu: ");
     scanf("%lf",&x);
 
-    printf("          500                                     \n");
-    printf("        ______                                    \n");
-    printf("        \\                        2*k+1           \n");
-    printf("         \\             (2*k)! * x                \n");
-    printf("asin(%.2f) = >         ______________________        \n",x);
-    printf("         /            k      2                    \n");
-    printf("        /_____       4 * (k)!  * (2*k+1)          \n");
-    printf("          k=0                                 \n\n\n");
+    printf("              500                                     \n");
+    printf("             ______                                   \n");
+    printf("            \\                        2*k+1           \n");
+    printf("             \\             (2*k)! * x                \n");
+    printf("asin(%.2f) =  >         ______________________        \n",x);
+    printf("             /            k      2                    \n");
+    printf("            /_____       4 * (k)!  * (2*k+1)          \n");
+    printf("              k=0                                 \n\n\n");
 
     printf("                                2   2             \n");
     printf("                         (2*k-1) * x              \n");
