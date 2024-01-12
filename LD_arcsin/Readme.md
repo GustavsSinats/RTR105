@@ -42,7 +42,8 @@ Koda attēls ar ASCII zīmējumu:
 
 
 
-![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/58785aab-b5ac-49ed-8ed1-055e4c97ecf9)
+![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/5d8799f8-1977-4f0e-aca7-699ec4b1b36d)
+
 
 
 
