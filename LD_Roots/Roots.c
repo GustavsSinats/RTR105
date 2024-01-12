@@ -57,15 +57,16 @@ int main()
         printf("Sakne atrodas pie x = %.3f, jo asin(x) ir %.3f\n", x, (asin(x)+c));
     }
    
-    fprintf((pf),"x\t\t c\t\t \n %.3f\t 0 \t\t", x);
+    fprintf((pf),"x\t\t y\t\t \n %.3f\t 0 \t\t", x);
     fclose(pf);
 
-
+///// velreiz paprasu vērtības, lai uztaisītu funkcijas atvasinajumu
     FILE * pFile;
     pFile = fopen("derivative.dat","w");
 
 fprintf(pFile,"\tx\t\tsin(x)\n)");
 
+printf("Ludzu aizpildi vertibas, lai varetu uzzzimet atvasinajumu funckijai ar parbidi\n");
 printf("Ludzu ievadi intervala sakuma vertibu a:");
     scanf("%f", &a);
     printf("Ludzu ievadi intervala beigu vertibu b:");
@@ -76,7 +77,6 @@ printf("Ludzu ievadi intervala sakuma vertibu a:");
     scanf("%f", &c);
     
 x = a;
-printf("%10.2f\t%10.2f\n",x,asin(x) + c);
 while (x<b)
     {
       

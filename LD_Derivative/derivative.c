@@ -1,100 +1,77 @@
 #include <stdio.h>
 #include <math.h>
+double eps;
 
 // Funkcija, kas aprēķina f(x)
-double f(double x)
-{
-    return asin(x);
+double f(double x) {
+  return asin(x);
 }
 
-// Funkcija, kas aprēķina f'(x)
-double f_prim(double x)
-{
-    return 1 / sqrt(1 - x * x);
+// Funkcija, kas aprēķina f'(x) analitiski
+double f_prim(double x) {
+  return 1 / sqrt(1 - x * x);
 }
 
-// Funkcija, kas aprēķina f''(x)
-double f_sec(double x)
-{
-    return -x / (2 * sqrt(1 - x * x) * sqrt(1 - x * x));
+// Funkcija, kas aprēķina f''(x) analitiski
+double f_sec(double x) {
+  return 2*x/((2*sqrt(1- x * x))*(1/sqrt(1 - x * x)*(1/sqrt(1 - x * x))));
 }
 
-int main()
-{
-    double a, b, eps;
-    printf("Ievadiet a vertibu: ");
-    scanf("%lf", &a);
+// Funkcija, kas aprēķina f'(x) skaitliski ar diferenciēšanu uz priekšu
+double f_prim_skait(double x) {
+  return (f(x + eps) - f(x)) / eps;
+}
 
-    printf("Ievadiet b vertibu: ");
-    scanf("%lf", &b);
+// Funkcija, kas aprēķina f''(x) skaitliski ar diferenciēšanu uz priekšu
+double f_sec_skait(double x) {
+  return (f(x + eps) - 2 * f(x) + f(x - eps)) / (eps * eps);
+}
 
-    printf("Ievadiet precizitates vertibu: ");
-    scanf("%lf", &eps);
+int main() {
 
-    
+  double a, b;
 
-    // Aprēķina f(x) vērtības, x no a līdz b
-    FILE *fp = fopen("derivative.dat", "w");
-    fprintf(fp, "\tx\t\t f(x) funkcijas asin vertiba\n");
-    for (double x = a; x <= b; x += eps)
-    {
-        fprintf(fp, " %lf %lf\n", x, f(x));
-    }
-    fprintf(fp, "\n\n");
-    fclose(fp);
+  // Ievadiet a vertibu:
+  printf("Ievadiet a vertibu: ");
+  scanf("%lf", &a);
 
+  // Ievadiet b vertibu:
+  printf("Ievadiet b vertibu: ");
+  scanf("%lf", &b);
 
+  // Ievadiet precizitātes vertibu:
+  printf("Ievadiet precizitates vertibu: ");
+  scanf("%lf", &eps);
 
-    // Aprēķina f'(x) vērtības, x no a līdz b (analitiskais atvasinājums)
-    fp = fopen("derivative.dat", "a");
-    fprintf(fp, "\tx\t f'(x) analitiskais atvasinajums\n");
-    for (double x = a; x <= b; x += eps)
-    {
-        fprintf(fp, "%lf %lf\n", x, f_prim(x));
-    }
-    fprintf(fp, "\n\n");
-    fclose(fp);
+  // Atvērt failu rakstīšanai
+  FILE *fp = fopen("derivative2.dat", "w");
 
+  // Izdrukāt kolonnu nosaukumus
+  fprintf(fp, "\tX\t    asin(x)     f'(x)   f'(x) (skait)  f''(x) (skait)     f''(x) (anal) \n");
 
+  // Aprēķināt f(x) vērtības
+  for (double x = a; x <= b; x += eps) {
+    // Izdrukāt x vērtību ar tab palīdzību
+    fprintf(fp, "%lf\t", x);
 
-    // Aprēķina f'(x) vērtības, x no a līdz b (skaitliskais atvasinājums - diferencēšana un priekšu)
-    fp = fopen("derivative.dat", "a");
-    fprintf(fp, "\tx\t f'(x) skaitliskais atvasinājums - diferencesana uz prieksu\n");
-    for (double x = a; x <= b; x += eps)
-    {
-        fprintf(fp, "%lf %lf\n", x, (f(x + eps) - f(x)) / eps);
-    }
-    fprintf(fp, "\n\n");
-    fclose(fp);
+    // Izdrukāt f(x) vērtību ar tab palīdzību
+    fprintf(fp, "%lf\t", f(x));
 
+    // Izdrukāt f'(x) vērtību ar tab palīdzību
+    fprintf(fp, "%lf\t", f_prim(x));
 
+    // Izdrukāt f'(x) vērtību skaitliski ar diferenciēšanu uz priekšu ar tab palīdzību
+    fprintf(fp, "%lf\t", f_prim_skait(x));
 
-    // Aprēķina f''(x) vērtības, x no a līdz b (analitiskais atvasinājums)
-    fp = fopen("derivative.dat", "a");
-    fprintf(fp, "\tx\t f''(x) analitiskais atvasinajums\n");
-    for (double x = a; x <= b; x += eps)
-    {
-        fprintf(fp, "%lf %lf\n", x, f_sec(x));
-    }
-    fprintf(fp, "\n\n");
-    fclose(fp);
+    // Izdrukāt f''(x) vērtību skaitliski ar diferenciēšanu uz priekšu ar tab palīdzību
+    fprintf(fp, "%lf\t\t", f_sec_skait(x));
 
+    // Izdrukāt f''(x) vērtību ar analītiskām diferenciāciju ar tab palīdzību
+    fprintf(fp, "%lf\n", f_sec(x));
+  }
 
+  // Aizvērt failu
+  fclose(fp);
 
-    // Aprēķina f''(x) vērtības, x no a līdz b (skaitliskais atvasinājums - diferencēšana un priekšu)
-    fp = fopen("derivative.dat", "a");
-    fprintf(fp, "\tx\t f''(x) skaitliskais atvasinājums - diferencēšana un priekšu\n");
-    for (double x = a; x <= b; x += eps)
-    {
-        fprintf(fp, "%lf %lf\n", x, (f(x + 2 * eps) - 2 * f(x + eps) + f(x)) / (eps * eps));
-    }
-    fprintf(fp, "\n\n");
-    fclose(fp);
-
-
-
-   // fp = open("derivative.dat", "a");
-   // fprintf(fp," %lf %lf %lf %lf %lf", x, f(x),f_prim(x),(f(x + eps) - f(x)) / eps, f_sec(x));
-   // fclose (fp);
-    return 0;
+  return 0;
 }
