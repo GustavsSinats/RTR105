@@ -37,7 +37,7 @@ Trapeču metodē  integrēšanas intervāls tiek sadalīts daudzos mazos interv�
 ### Programma  
 Šī programma aprēķina noteiktā integrāļa vērtību, izmantojot taisnstūra, trapeces un Simpsona metodes. Lietotājam ir jāievada a, b un epsilon vērtības. a ir intervāla sākumpunkts, b ir intervāla beigu punkts, no kura tiks rēķināts noteiktais integrālis. epsilon ir vērtība, kura nosaka, līdz kādai precizitātei tiks veikti aprēķini. Ja precizitāte nav ļoti būtiska, tad sarežģītām funkcijām var ietaupīt datora resursus un samazināt programmas izpildes laiku. Kad vērtības ir iegūtas, noteiktais integrālis tiek aprēķināts ar tasinstūra, trapeču un Simpsona metodēm un rezultāti tiek izprintēti uz ekrāna. Pēc tam noteiktais integrālis izvēlētajā intervālā tiek uzzīmēts ar Gnuplot palīdzību.
    
-Koda un rezultātu attēls attēls:  
+Programmas, grafika un rezultātu attēls attēls:  
 ![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/b416a1ec-2070-43d2-8185-f967232b9912)  
 
 ![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/616a65b3-2c9e-44ba-ba24-105d4f840846)  
