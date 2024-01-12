@@ -22,7 +22,5 @@ Programma aprēķina funkcijas atvasinājumu ar 2 dažādiem paņēmieniem - ska
   
 
     
-![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/18bc9cf2-ad7d-4c08-811a-dae3d9c26621)  
+![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/6c75a67b-dd72-4382-9fc0-c0daa9b5f3fb)
 
-    
-![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/fdb8b8ba-926d-46c8-97f2-b2946be785f5)
