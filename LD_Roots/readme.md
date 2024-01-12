@@ -2,13 +2,13 @@
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
-Roots.c - pabeigts kods.   
-grafiks.gp - gnuplota scripts.  
-Sakne asin(x) +c.png - funkciju attēlojums gnuplotā.  
-Roots.dat - fails, kurā glabājas koordinātes, kurās jāatrodas saknei.  
-Grafiks.dat - fails, kurā glabājas funkcija, kā jāzīmē asin(x) + c.  
-Roots_izpildits_grafiks.png - attēls, ar izpildītu kodu.
-readme md - apraksts par laboratorijas darbu. 
+[Roots.c](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Roots/Roots.c) - pabeigts kods.   
+[grafiks.gp](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Roots/grafiks.gp) - gnuplota scripts.  
+[Sakne asin(x) +c.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Roots/Sakne%20asin(x)%20%2Bc.png) - funkciju attēlojums gnuplotā.  
+[Roots.dat](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Roots/Roots.dat) - fails, kurā glabājas koordinātes, kurās jāatrodas saknei.  
+[Grafiks.dat](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Roots/Grafiks.dat) - fails, kurā glabājas funkcija, kā jāzīmē asin(x) + c.  
+[Roots_izpildits_kods.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Roots/Roots_izpildits_kods.png) - attēls, ar izpildītu kodu.
+[readme.md](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_Roots/readme.md) - apraksts par laboratorijas darbu. 
 
   
 
