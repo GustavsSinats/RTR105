@@ -127,7 +127,7 @@ int main()
     }
   }
 
-  // Close the file
+  // aizver failu
   fclose(pFile);
 
     return 0;
