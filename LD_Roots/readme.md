@@ -1,4 +1,4 @@
-### 5. Laboratorijas darbs - Bubble Sort  
+### 3. Laboratorijas darbs - Roots  
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
@@ -26,7 +26,7 @@ Kvadrātvienādojuma saknes nosaka, cik atrisinājumu ir vienādojumam. Piemēra
 Programma prasa lietotājam ievadī no kura punkta viņš vēlās sākt meklēt saknes un pie kura beigt, kā arī precizitāti līdz kurai rēķināt x vērtību, kurā grafiks krusto x asi. Tā kā funkcijas bieži tiek pārbīdītas, tad arī šajā prgrammā no lietotāja tiek prasīts par cik vienībām pārbīdīt funkciju uz augšu vai leju pa y asi.   
 Kad vērtības ir iegūtas, programma veic aprēķinus un lietotājam uz ekrāna parāda saknes vērtību un cik iterācijas tas prasīja, lai nonāktu pie ievadītās precizitātes. Lai varētu pārbīdīto funkciju attēlot Gnuplotā, tiek izveidots datu fails ar nosaukumu grafiks.dat, savukārt, lai attēlotu sakni, tās koordinātes tiek saglabātas failā Roots.dat.
   
-Koda attēls ar ASCII zīmējumu:  
+Koda attēls:  
 
     
 ![image](https://github.com/GustavsSinats/RTR105_2023_01/assets/144107004/18bc9cf2-ad7d-4c08-811a-dae3d9c26621)  
