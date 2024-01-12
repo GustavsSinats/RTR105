@@ -2,11 +2,11 @@
 Autors - Gustavs Sināts  
 Grupa - RECV0_1
 ### Mapes saturs  
-integresana.c - pabeigts kods.   
-integresana.gp - gnuplota scripts.  
-integralis.png - funkciju attēlojums gnuplotā.
-WolframAlpha.png - noteiktā integrāļa aprēķina ar programmu WolframAlpha.  
-readme md - apraksts par laboratorijas darbu. 
+[integresana.c](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_integresana/integresana.c) - pabeigts kods.   
+[integresana.gp](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_integresana/integresana.gp) - gnuplota scripts.  
+[integralis.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_integresana/integralis.png) - funkciju attēlojums gnuplotā.  
+[WolframAlpha.png](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_integresana/WolframAlpha.png) - noteiktā integrāļa aprēķina ar programmu WolframAlpha.  
+[readme.md](https://github.com/GustavsSinats/RTR105_2023_01/blob/main/LD_integresana/readme.md) - apraksts par laboratorijas darbu. 
 
   
 
